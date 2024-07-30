@@ -1,0 +1,12 @@
+.sidebar{
+    
+    background: transparent;
+}
+.sidebar:hover{
+    background: transparent;
+    border-bottom: 2px solid #ff4900;
+    color: #ff4900;
+}
+.sidebar a.active{
+    background: transparent;
+}

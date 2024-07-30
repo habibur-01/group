@@ -1,0 +1,13 @@
+.banner-container{
+    background-image: linear-gradient(to right,  rgb(255, 240, 235, 1), rgb(241, 208, 197, 0.8), rgba(255, 255, 255, 0.0)), url("../../../assets/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+    width: 100%;
+    
+}
+.form-container input{
+    height: 36px;
+    border: 2px solid #f7d7cc;
+    padding-left: 10px;
+}
