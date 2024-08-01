@@ -1,12 +1,12 @@
 import { BiMessageDetail } from "react-icons/bi";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import customer from "../../assets/images/member-3.jpg";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Testimonials = () => {
   return (
@@ -25,50 +25,99 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className="my-10">
+      <div className="my-10 z-0 w-[80%] mx-auto">
         <Swiper
-          pagination={{
-            dynamicBullets: true,
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
           }}
-          modules={[Pagination]}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="flex flex-col items-center justify-center py-10">
-              <div className="text-center">
-                <p className="text-center text-2xl w-[80%] lg:w-[50%] mx-auto leading-8">
+            <div className="bg-gradient-to-r from-[#ff4900] via-[#f7d2c3] to-[#f3bd80] w-[80%] mx-auto min-h-fit py-6 my-12">
+              <div>
+                <h1 className="text-xl font-bold text-left ml-10 text-black">
+                  Jhon Wick
+                </h1>
+              </div>
+              <div className="bg-[#ffffff] m-10 p-5 flex justify-between rounded-lg">
+                <p className=" text-lg  mx-auto leading-8">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  facilis explicabo dolores vero praesentium! Ea perferendis
+                  iure adipisci laborum velit!
+                </p>
+                <img
+                  src={customer}
+                  className="w-20 h-20 border-2 rounded-full border-[#ffffff] -mt-14"
+                  alt=""
+                />
+              </div>
+            </div>
+            {/* <div className="flex w-[80%]  justify-center py-10 mx-auto shadow-xl relative">
+              <div className="">
+                <p className=" text-2xl  mx-auto leading-8">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                   facilis explicabo dolores vero praesentium! Ea perferendis
                   iure adipisci laborum velit!
                 </p>
                 <h3 className="text-xl font-bold mt-8">Tom Hardy</h3>
-                <h4 className="text-[#ff4900]">CEO</h4>
+                <h4 className="text-[#ff4900] mb-8">CEO</h4>
+              </div>
+              <div className="w-20 h-20 overflow-hidden rounded-full border-[1px] border-[#f0865d] ">
+                <img
+                  src={customer}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div> */}
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="bg-[#ff4900]/60 w-[80%] mx-auto min-h-fit py-6 my-12">
+              <div>
+                <h1 className="text-xl font-bold text-left ml-10 text-black">
+                  Jhon Wick
+                </h1>
+              </div>
+              <div className="bg-[#ffffff] m-10 p-5 flex justify-between rounded-lg">
+                <p className=" text-lg  mx-auto leading-8">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  facilis explicabo dolores vero praesentium! Ea perferendis
+                  iure adipisci laborum velit!
+                </p>
+                <img
+                  src={customer}
+                  className="w-20 h-20 border-2 rounded-full border-[#ffffff] -mt-14"
+                  alt=""
+                />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col items-center justify-center py-10">
-              <div className="text-center">
-                <p className="text-center text-2xl w-[80%] lg:w-[50%] mx-auto leading-8">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  facilis explicabo dolores vero praesentium! Ea perferendis
-                  iure adipisci laborum velit!
-                </p>
-                <h3 className="text-xl font-bold mt-8">Tom Hardy</h3>
-                <h4 className="text-[#ff4900]">CEO</h4>
+            <div className="bg-[#ff4900]/60 w-[80%] mx-auto min-h-fit py-6 my-12">
+              <div>
+                <h1 className="text-xl font-bold text-left ml-10 text-black">
+                  Jhon Wick
+                </h1>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col items-center justify-center pt-10">
-              <div className="text-center">
-                <p className="text-center text-2xl w-[80%] lg:w-[50%] mx-auto leading-8">
+              <div className="bg-[#ffffff] m-10 p-5 flex justify-between rounded-lg">
+                <p className=" text-lg  mx-auto leading-8">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                   facilis explicabo dolores vero praesentium! Ea perferendis
                   iure adipisci laborum velit!
                 </p>
-                <h3 className="text-xl font-bold mt-8">Tom Hardy</h3>
-                <h4 className="text-[#ff4900] mt-3">CEO</h4>
+                <img
+                  src={customer}
+                  className="w-20 h-20 border-2 rounded-full border-[#ffffff] -mt-14"
+                  alt=""
+                />
               </div>
             </div>
           </SwiperSlide>
