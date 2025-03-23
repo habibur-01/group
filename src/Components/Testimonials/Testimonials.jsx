@@ -25,7 +25,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className="my-10 z-0 w-[80%] mx-auto">
+      <div className="my-10 z-0 w-[80%] mx-auto ">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -38,56 +38,17 @@ const Testimonials = () => {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
+          className="!w-full"
         >
           <SwiperSlide>
-            <div className="bg-gradient-to-r from-[#ff4900] via-[#f7d2c3] to-[#f3bd80] w-[80%] mx-auto min-h-fit py-6 my-12">
+            <div className="bg-gradient-to-r from-[#ff4900] via-[#f7d2c3] to-[#f3bd80] w-[80%] mx-auto min-h-fit py-6 my-12 border-2 border-red-400">
               <div>
                 <h1 className="text-xl font-bold text-left ml-10 text-black">
                   Jhon Wick
                 </h1>
               </div>
               <div className="bg-[#ffffff] m-10 p-5 flex justify-between rounded-lg">
-                <p className=" text-lg  mx-auto leading-8">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  facilis explicabo dolores vero praesentium! Ea perferendis
-                  iure adipisci laborum velit!
-                </p>
-                <img
-                  src={customer}
-                  className="w-20 h-20 border-2 rounded-full border-[#ffffff] -mt-14"
-                  alt=""
-                />
-              </div>
-            </div>
-            {/* <div className="flex w-[80%]  justify-center py-10 mx-auto shadow-xl relative">
-              <div className="">
-                <p className=" text-2xl  mx-auto leading-8">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  facilis explicabo dolores vero praesentium! Ea perferendis
-                  iure adipisci laborum velit!
-                </p>
-                <h3 className="text-xl font-bold mt-8">Tom Hardy</h3>
-                <h4 className="text-[#ff4900] mb-8">CEO</h4>
-              </div>
-              <div className="w-20 h-20 overflow-hidden rounded-full border-[1px] border-[#f0865d] ">
-                <img
-                  src={customer}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div> */}
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-[#ff4900]/60 w-[80%] mx-auto min-h-fit py-6 my-12">
-              <div>
-                <h1 className="text-xl font-bold text-left ml-10 text-black">
-                  Jhon Wick
-                </h1>
-              </div>
-              <div className="bg-[#ffffff] m-10 p-5 flex justify-between rounded-lg">
-                <p className=" text-lg  mx-auto leading-8">
+                <p className=" text-lg mx-auto leading-8 text-gray-600">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                   facilis explicabo dolores vero praesentium! Ea perferendis
                   iure adipisci laborum velit!
@@ -108,7 +69,28 @@ const Testimonials = () => {
                 </h1>
               </div>
               <div className="bg-[#ffffff] m-10 p-5 flex justify-between rounded-lg">
-                <p className=" text-lg  mx-auto leading-8">
+                <p className=" text-lg text-gray-600 mx-auto leading-8">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  facilis explicabo dolores vero praesentium! Ea perferendis
+                  iure adipisci laborum velit!
+                </p>
+                <img
+                  src={customer}
+                  className="w-20 h-20 border-2 rounded-full border-[#ffffff] -mt-14"
+                  alt=""
+                />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="bg-[#ff4900]/60 w-[80%] mx-auto min-h-fit py-6 my-12">
+              <div>
+                <h1 className="text-xl font-bold text-left ml-10 text-black">
+                  Jhon Wick
+                </h1>
+              </div>
+              <div className="bg-[#ffffff] m-10 p-5 flex justify-between rounded-lg">
+                <p className=" text-lg text-gray-600 mx-auto leading-8">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
                   facilis explicabo dolores vero praesentium! Ea perferendis
                   iure adipisci laborum velit!

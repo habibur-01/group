@@ -1,5 +1,4 @@
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
-import software from "../../assets/images/monitor.png";
 import "./style.css";
 import Container from "../Shared/Container/Container";
 import AOS from "aos";

@@ -1,4 +1,4 @@
-import { FaFacebook,  FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import Container from "../../Components/Shared/Container/Container";
 import PageBanner from "../../Components/Shared/PageBanner/PageBanner";
 import teambg from "../../assets/images/contact.jpg";
@@ -7,6 +7,7 @@ import member2 from "../../assets/images/member-2.jpg";
 import member3 from "../../assets/images/member-3.jpg";
 import "./outeam.css";
 import { FaSquareInstagram } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const OurTeam = () => {
   return (
@@ -39,99 +40,105 @@ const OurTeam = () => {
                 Software Department
               </h1>
               <div className="my-10 grid grid-cols-3">
-                <div className="member-card-wraper">
-                  <div className="member-card">
-                    <div className="w-full h-[350px] overflow-hidden">
-                      <img
-                        src={member1}
-                        alt=""
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="text-center space-y-1 py-4">
-                      <h1 className="text-2xl font-bold">Sneha Islam</h1>
-                      <p className="text-base">Software Developer</p>
-                    </div>
-                  </div>
-                  <div className="member-details">
-                    <div className="inline-flex gap-6">
-                      <a href="">
-                        <FaFacebook size={36} className="text-blue-500" />
-                      </a>
-                      <a href="">
-                        <FaLinkedin size={36} className="text-[#0b65c3]" />
-                      </a>
-                      <a href="">
-                        <FaSquareInstagram
-                          size={36}
-                          className="text-[#df54f8]"
+                <Link to={`/personalInfo/${1}`}>
+                  <div className="member-card-wraper">
+                    <div className="member-card">
+                      <div className="w-full h-[350px] overflow-hidden">
+                        <img
+                          src={member1}
+                          alt=""
+                          className="w-full h-full object-cover"
                         />
-                      </a>
+                      </div>
+                      <div className="text-center space-y-1 py-4">
+                        <h1 className="text-2xl font-bold">Sneha Islam</h1>
+                        <p className="text-base">Software Developer</p>
+                      </div>
+                    </div>
+                    <div className="member-details">
+                      <div className="inline-flex gap-6">
+                        <a href="">
+                          <FaFacebook size={36} className="text-blue-500" />
+                        </a>
+                        <a href="">
+                          <FaLinkedin size={36} className="text-[#0b65c3]" />
+                        </a>
+                        <a href="">
+                          <FaSquareInstagram
+                            size={36}
+                            className="text-[#df54f8]"
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="member-card-wraper">
-                  <div className="member-card">
-                    <div className="w-full h-[350px] overflow-hidden">
-                      <img
-                        src={member3}
-                        alt=""
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="text-center space-y-1 py-4">
-                      <h1 className="text-2xl font-bold">Fazle Abedin</h1>
-                      <p className="text-base">Software Developer</p>
-                    </div>
-                  </div>
-                  <div className="member-details">
-                    <div className="inline-flex gap-6">
-                      <a href="">
-                        <FaFacebook size={36} className="text-blue-500" />
-                      </a>
-                      <a href="">
-                        <FaLinkedin size={36} className="text-[#0b65c3]" />
-                      </a>
-                      <a href="">
-                        <FaSquareInstagram
-                          size={36}
-                          className="text-[#df54f8]"
+                </Link>
+                <Link to={`/personalInfo/${2}`}>
+                  <div className="member-card-wraper">
+                    <div className="member-card">
+                      <div className="w-full h-[350px] overflow-hidden">
+                        <img
+                          src={member3}
+                          alt=""
+                          className="w-full h-full object-cover"
                         />
-                      </a>
+                      </div>
+                      <div className="text-center space-y-1 py-4">
+                        <h1 className="text-2xl font-bold">Fazle Abedin</h1>
+                        <p className="text-base">Software Developer</p>
+                      </div>
+                    </div>
+                    <div className="member-details">
+                      <div className="inline-flex gap-6">
+                        <a href="">
+                          <FaFacebook size={36} className="text-blue-500" />
+                        </a>
+                        <a href="">
+                          <FaLinkedin size={36} className="text-[#0b65c3]" />
+                        </a>
+                        <a href="">
+                          <FaSquareInstagram
+                            size={36}
+                            className="text-[#df54f8]"
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="member-card-wraper">
-                  <div className="member-card">
-                    <div className="w-full h-[350px] overflow-hidden">
-                      <img
-                        src={member2}
-                        alt=""
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="text-center space-y-1 py-4">
-                      <h1 className="text-2xl font-bold">Senorita Gupta</h1>
-                      <p className="text-base">Software Developer</p>
-                    </div>
-                  </div>
-                  <div className="member-details">
-                    <div className="inline-flex gap-6">
-                      <a href="">
-                        <FaFacebook size={36} className="text-blue-500" />
-                      </a>
-                      <a href="">
-                        <FaLinkedin size={36} className="text-[#0b65c3]" />
-                      </a>
-                      <a href="">
-                        <FaSquareInstagram
-                          size={36}
-                          className="text-[#df54f8]"
+                </Link>
+                <Link to={`/personalInfo/${3}`}>
+                  <div className="member-card-wraper">
+                    <div className="member-card">
+                      <div className="w-full h-[350px] overflow-hidden">
+                        <img
+                          src={member2}
+                          alt=""
+                          className="w-full h-full object-cover"
                         />
-                      </a>
+                      </div>
+                      <div className="text-center space-y-1 py-4">
+                        <h1 className="text-2xl font-bold">Senorita Gupta</h1>
+                        <p className="text-base">Software Developer</p>
+                      </div>
+                    </div>
+                    <div className="member-details">
+                      <div className="inline-flex gap-6">
+                        <a href="">
+                          <FaFacebook size={36} className="text-blue-500" />
+                        </a>
+                        <a href="">
+                          <FaLinkedin size={36} className="text-[#0b65c3]" />
+                        </a>
+                        <a href="">
+                          <FaSquareInstagram
+                            size={36}
+                            className="text-[#df54f8]"
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </Container>

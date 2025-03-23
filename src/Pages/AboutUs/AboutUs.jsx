@@ -8,7 +8,11 @@ const AboutUs = () => {
   const pagePath = location.pathname.split("/")[1];
   return (
     <div>
-      <PageBanner image={bgimage} path={pagePath} title={'About Us'}></PageBanner>
+      <PageBanner
+        image={bgimage}
+        path={pagePath}
+        title={"About Us"}
+      ></PageBanner>
       <Container>
         <div className="my-24">
           <div className="flex justify-center items-center gap-4 h-10 w-36 bg-[#ffffff] rounded-lg shadow-lg">
@@ -22,7 +26,7 @@ const AboutUs = () => {
             <div className="w-[700px]">
               <h1 className="text-[40px] mb-4">
                 <span className="text-[#ff4900]">Introduction</span> To About
-                IGL Group Ltd!
+                Duronto Group Ltd!
               </h1>
               <p>
                 We can help you from concept to design to all the way for
@@ -33,7 +37,9 @@ const AboutUs = () => {
             </div>
             <div className="flex justify-end">
               <div className="w-[60%] ml-10 bg-[#ff4900] p-14 text-white">
-                <h1 className="text-2xl font bold mb-4">Our Mission & Vission</h1>
+                <h1 className="text-2xl font bold mb-4">
+                  Our Mission & Vission
+                </h1>
                 <p>
                   Company vision is to enable people at all levels to reach the
                   appropriate, advanced, ultimate computer-based technologies
@@ -43,32 +49,32 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-       <div>
-         <div className="grid grid-cols-2 gap-12 h-max mb-24">
-          <div className="h-[350px] w-[550px] rounded-lg overflow-hidden">
-            <img src={bgimage} alt="" className="w-full h-full rounded-lg" />
-          </div>
-          <div className="flex-1 flex justify-center items-center">
-            <div className="space-y-8 ">
-              <h1 className="text-[40px]">
-                World’s Best{" "}
-                <span className="text-[#ff4900]">Engineering & IT</span>
-                <br />
-                Solution Provider.
-              </h1>
-              <p className="w-[70%] ">
-                We have been serving IT services in the local & international
-                markets with great fame. We can help you from concept to design
-                to all the way for deployment.
-              </p>
-              <h1 className="text-2xl font-bold uppercase">
-                MD MOIN UDDIN,{" "}
-                <span className="text-[#ff4900]">CEO & FOUNDER</span>
-              </h1>
+        <div>
+          <div className="grid grid-cols-2 gap-12 h-max mb-24">
+            <div className="h-[350px] w-[550px] rounded-lg overflow-hidden">
+              <img src={bgimage} alt="" className="w-full h-full rounded-lg" />
+            </div>
+            <div className="flex-1 flex justify-center items-center">
+              <div className="space-y-8 ">
+                <h1 className="text-[40px]">
+                  World’s Best{" "}
+                  <span className="text-[#ff4900]">Engineering & IT</span>
+                  <br />
+                  Solution Provider.
+                </h1>
+                <p className="w-[70%] ">
+                  We have been serving IT services in the local & international
+                  markets with great fame. We can help you from concept to
+                  design to all the way for deployment.
+                </p>
+                <h1 className="text-2xl font-bold uppercase">
+                  MD Momen Khan,{" "}
+                  <span className="text-[#ff4900]">CEO & FOUNDER</span>
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-       </div>
       </Container>
     </div>
   );

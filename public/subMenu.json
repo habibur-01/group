@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "subCategory": "Duronto Web",
+        "path": "durontoweb"
+    },
+    {
+        "id": 2,
+        "subCategory": "Duronto Host",
+        "path": "durontohost"
+    },
+    {
+        "id": 3,
+        "subCategory": "Duronto Network",
+        "path": "durontonet"
+    }
+]

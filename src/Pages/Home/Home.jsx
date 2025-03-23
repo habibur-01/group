@@ -4,17 +4,26 @@ import SisterConcern from "../../Components/SisterConcern/SisterConcern";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import Banner from "./Banner/Banner";
 
-
 const Home = () => {
-    return (
-        <div>
-            <Banner></Banner>
-            <OurServices></OurServices>
-            <Testimonials></Testimonials>
-            <SisterConcern></SisterConcern>
-            <OurPartner></OurPartner>
-        </div>
-    );
+  return (
+    <div>
+      <div>
+        <Banner></Banner>
+      </div>
+      <div>
+        <OurServices></OurServices>
+      </div>
+      <div>
+        <Testimonials></Testimonials>
+      </div>
+      <div>
+        <SisterConcern></SisterConcern>
+      </div>
+      <div>
+        <OurPartner></OurPartner>
+      </div>
+    </div>
+  );
 };
 
 export default Home;

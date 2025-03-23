@@ -30,7 +30,7 @@ const Banner = () => {
           data-aos-easing="ease-in-out"
           data-aos-offset="200"
         >
-          Welcome To <span className="text-[#ff4900]">IGL Group</span>
+          Welcome To <span className="text-[#ff4900]">Duronto Group</span>
         </h1>
         <p
           className="mt-8 leading-8 font-medium"
@@ -48,7 +48,6 @@ const Banner = () => {
         <button
           onClick={handleAppointment}
           className="bg-[#ff4900] rounded-full btn text-white px-8 text-[16px] mt-10 hover:bg-transparent hover:text-[#ff4900] hover:border-[1px] hover:border-[#ff4900]"
-          
         >
           Appointment{" "}
           <span className="-rotate-45">
